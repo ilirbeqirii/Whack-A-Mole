@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      width: 960px;
+      margin: 5% auto;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  
+  .header {
+    color: #000000;
+    padding: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: bisque;
+  }
+
+  .game {
+    display: inline-block;
+    background-color: lightgreen;
+    text-align: center;
+  }
+
+  .box {
+    position: relative;
+    padding-top: 70px;
+  	overflow: hidden;
+  }
+
+  button {
+    display: inline-block;
+    background-color: red;
+    width: 80px;
+    height: 40px;;
+  }
+
+  .gameControls {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  button:nth-child(odd) {
+    background-color: white;
+  }
+
+  .hole {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    background-image: url("https://res.michaelwhyte.ca/dirt.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    z-index: 1000;
+  }
+
+  .mole {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 150px;
+    background-image: url("mole.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+  }
+
+  .activeMole {
+    animation: 1s showUp;
+    animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes showUp {
+    0% {
+      bottom: 0px;
+    }
+    50% {
+      visibility: visible;
+      bottom: 40px;
+    }
+  }
+
+  @keyframes showUp {
+    0% {
+      bottom: 0px;
+    }
+    50% {
+      visibility: visible;
+      bottom: 40px;
+    }
+  }

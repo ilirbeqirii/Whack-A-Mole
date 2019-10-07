@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Whack-a-mole</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="header">
+        WHACK-A-MOLE
+    </div>
+
+    <div class="row">
+
+        <div class="col-3 indicator">
+            Score:
+            <span class="score">0</span>
+            <br />
+            Time:
+            <span class="time">00:00</span>
+        </div>
+
+        <div class="col-9 game">
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"> </div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+            <div class="col-4 box">
+                <div class="mole"></div>
+                <div class="hole"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+
+        <div class="gameControls">
+            <button type="button" id="btnStart" onclick="startGame()">Start</button>
+            <button type="button" id="btnStop" onclick="stopGame()">Stop</button>
+            <button type="button" id="btnReset" onclick="resetGame()">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
